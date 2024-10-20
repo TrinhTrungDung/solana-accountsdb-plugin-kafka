@@ -14,7 +14,7 @@
 
 use {
     crate::{metrics::StatsThreadedProducerContext, PrometheusService},
-    agave_geyser_plugin_interface::geyser_plugin_interface::{
+    solana_geyser_plugin_interface::geyser_plugin_interface::{
         GeyserPluginError, Result as PluginResult,
     },
     rdkafka::{

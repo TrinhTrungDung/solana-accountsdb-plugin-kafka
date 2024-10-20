@@ -12,7 +12,6 @@ publish = false
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-agave-geyser-plugin-interface = "~2.0.13"
 hyper = { version = "0.14.26", features = ["server"] }
 lazy_static = "1.4.0"
 log = "0.4.0"
@@ -21,10 +20,16 @@ prost = "0.12.1"
 rdkafka = { version = "0.33.0", features = ["ssl", "sasl"] }
 serde = { version = "1.0.147", features = ["derive"] }
 serde_json = "1.0.81"
-solana-logger = "~2.0.13"
-solana-program = "~2.0.13"
-solana-transaction-status = "~2.0.13"
-tokio = { version = "1.32.0", features = ["rt-multi-thread", "time", "macros", "sync"] }
+solana-geyser-plugin-interface = "1.18.26"
+solana-logger = "1.18.26"
+solana-program = "1.18.26"
+solana-transaction-status = "1.18.26"
+tokio = { version = "1.32.0", features = [
+	"rt-multi-thread",
+	"time",
+	"macros",
+	"sync",
+] }
 
 [build-dependencies]
 anyhow = "1.0.65"
